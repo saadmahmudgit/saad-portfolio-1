@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Saad Mahmud — Portfolio</title>
+<meta name="description" content="Saad Mahmud — university student and AI-native builder. Interactive portfolio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<!-- Vercel Web Analytics -->
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+
+<div id="game-wrap">
+  <canvas id="game" width="960" height="540" aria-hidden="true"></canvas>
+</div>
+
+<div class="hint">A / D move &middot; W jump</div>
+
+<!-- Popups -->
+<div class="modal" id="modal-about" hidden>
+  <div class="modal-box" role="dialog" aria-labelledby="about-title">
+    <button class="modal-close" data-close aria-label="Close">&times;</button>
+    <h2 id="about-title">About Me</h2>
+    <p>Saad Mahmud is a university student and AI-native builder turning ideas into products through design and tech.</p>
+    <p><a href="https://www.linkedin.com/in/saad-mahmud-6970aa346/" target="_blank" rel="noopener">LinkedIn →</a></p>
+  </div>
+</div>
+
+<div class="modal" id="modal-projects" hidden>
+  <div class="modal-box" role="dialog" aria-labelledby="projects-title">
+    <button class="modal-close" data-close aria-label="Close">&times;</button>
+    <h2 id="projects-title">Projects</h2>
+    <p>Coming soon.</p>
+  </div>
+</div>
+
+<div class="modal" id="modal-experience" hidden>
+  <div class="modal-box" role="dialog" aria-labelledby="experience-title">
+    <button class="modal-close" data-close aria-label="Close">&times;</button>
+    <h2 id="experience-title">Experience</h2>
+    <p>Coming soon.</p>
+  </div>
+</div>
+
+<!-- Hidden but real HTML content: mirrors everything for screen readers / crawlers -->
+<div class="sr-only">
+  <h1>Saad Mahmud</h1>
+  <section>
+    <h2>About Me</h2>
+    <p>Saad Mahmud is a university student and AI-native builder turning ideas into products through design and tech.</p>
+    <p><a href="https://www.linkedin.com/in/saad-mahmud-6970aa346/">LinkedIn</a></p>
+  </section>
+  <section>
+    <h2>Projects</h2>
+    <p>Coming soon.</p>
+  </section>
+  <section>
+    <h2>Experience</h2>
+    <p>Coming soon.</p>
+  </section>
+  <p>This site is an interactive experience: use A and D to move and W to jump, and jump into the floating blocks to reveal each section. Best viewed on a desktop browser.</p>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
